@@ -100,7 +100,7 @@ services:
       - GF_USERS_ALLOW_SIGN_UP=false
     restart: unless-stopped
     expose:
-      - 3000
+      - 4000
     networks:
       - monitor-net
     labels:
@@ -121,7 +121,7 @@ services:
     image: caddy:2.3.0
     container_name: caddy
     ports:
-      - "3000:3000"
+      - "4000:4000"
       - "9090:9090"
       - "9093:9093"
       - "9091:9091"
